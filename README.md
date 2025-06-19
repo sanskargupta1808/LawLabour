@@ -181,3 +181,33 @@ Deployment	FastAPI + Docker + HuggingFace Spaces / GCP / AWS
 	•	Cite court judgments and sections.
 	•	Ask for legal strategy or cross-examination advice.
 	•	Visual flowchart of legal steps (optional extension).
+
+⸻
+
+## Getting Started
+
+### Prerequisites
+* **Python** 3.10+
+* Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### Sample Commands
+Load documents into the vector store:
+```bash
+python scripts/load_data.py --src data/raw --db data/index
+```
+
+Run the RAG pipeline:
+```bash
+python scripts/run_rag.py --db data/index --query "What is Section 498A of IPC?"
+```
+
+⸻
+
+## Contributing
+
+1. Open an issue describing your proposal or bug.
+2. Create a branch in your fork with your changes.
+3. Submit a pull request for review.
